@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://target-httpd.chals.io/valuvault.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Documentation</title>
+    <link href="./ValuVaultDocs_files/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      pre {
+        background-color: #f9fafb;
+        padding: 1rem;
+        border-radius: 0.375rem;
+        overflow-x: auto;
+        font-family: "Fira Code", monospace;
+      }
+      pre code {
+        font-family: "Fira Code", monospace;
+        color: #69d5f7; /* Customize the color as needed */
+      }
+      code {
+        font-family: "Fira Code", monospace;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md w-full z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="https://target-httpd.chals.io/valuvault.html#" class="text-2xl font-bold text-blue-500">ValuVault</a>
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-4">
+                <a href="https://target-httpd.chals.io/valuvault.html#section1" class="text-gray-700 hover:text-blue-500">About</a>
+                <a href="https://target-httpd.chals.io/valuvault.html#section2" class="text-gray-700 hover:text-blue-500">Installing</a>
+                <a href="https://target-httpd.chals.io/valuvault.html#section3" class="text-gray-700 hover:text-blue-500">Commands</a>
+                <a href="https://target-httpd.chals.io/valuvault.html#section4" class="text-gray-700 hover:text-blue-500">Configuration</a>
+              </div>
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="https://target-httpd.chals.io/valuvault.html#section1" class="block text-gray-700 hover:text-blue-500">About</a>
+          <a href="https://target-httpd.chals.io/valuvault.html#section2" class="block text-gray-700 hover:text-blue-500">Installing</a>
+          <a href="https://target-httpd.chals.io/valuvault.html#section3" class="block text-gray-700 hover:text-blue-500">Commands</a>
+          <a href="https://target-httpd.chals.io/valuvault.html#section4" class="block text-gray-700 hover:text-blue-500">Configuration</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold text-center">ValuVault</h1>
+        <p class="mt-4 text-lg text-center">
+          The simplest, most lightweight vault solution. Written with ❤️ in
+          Python!
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section 1 -->
+        <section id="section1" class="mb-16">
+          <h2 class="text-3xl font-bold mb-5">About</h2>
+          <p class="text-gray-700 leading-relaxed">
+            ValuVault is the premier password management solution for
+            enterprises, designed to seamlessly integrate into your existing IT
+            infrastructure. As a robust command line tool, ValuVault empowers IT
+            professionals and administrators to securely store, manage, and
+            access passwords with unparalleled efficiency and control. Built
+            with enterprise-grade security in mind, ValuVault utilizes
+            state-of-the-art encryption technology to ensure your sensitive data
+            is protected against breaches. Its powerful CLI capabilities enable
+            streamlined automation, scripting, and integration into DevOps
+            workflows, making it the ideal choice for businesses seeking to
+            enhance their security posture. Trust ValuVault to provide the
+            reliability, scalability, and security your enterprise demands.
+          </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="section2" class="mb-16">
+          <h2 class="text-3xl font-bold mb-5">Installing</h2>
+          <div class="text-gray-700 leading-relaxed">
+            <h3 class="text-xl font-bold my-2">Prerequisites</h3>
+            <p>Before you begin, ensure you have:</p>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Linux-based server (Ubuntu 20.04 or later recommended)</li>
+              <li>Root or sudo access to the server</li>
+            </ul>
+            <h3 class="text-xl font-bold my-2">
+              Step 1: Download the Installer Script
+            </h3>
+            <p>
+              Download the Installer Script Download the ValuVault installer
+              script using wget:
+            </p>
+            <pre class="bg-gray-800 text-white rounded-md p-4 overflow-x-auto">wget https://example.com/valuvault-installer.sh -O valuvault-installer.sh</pre>
+            <h3 class="text-xl font-bold my-2">
+              Step 2: Run the Installer Script
+            </h3>
+            <p>Make the installer script executable and run it:</p>
+            <pre class="bg-gray-800 text-white rounded-md p-4 overflow-x-auto">sh chmod +x valuvault-installer.sh
+sudo ./valuvault-installer.sh
+</pre>
+            <h3 class="text-xl font-bold my-2">Step 3: Access ValuVault</h3>
+            <p>
+              Once the installation is complete, open a terminal on your client
+              and access with:
+            </p>
+            <pre class="bg-gray-800 text-white rounded-md p-4 overflow-x-auto">nc &lt;your host&gt; &lt;your port&gt;
+</pre>
+          </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="section3" class="mb-16">
+          <h2 class="text-3xl font-bold mb-5">Commands</h2>
+
+          <h2 class="text-2xl font-semibold mt-8 mb-4">
+            <span class="text-blue-500">LIST</span>
+          </h2>
+          <p class="mb-2 text-gray-700">Lists all avaliable passwords.</p>
+          <pre class="bg-gray-800 text-white rounded-md p-4 overflow-x-auto"><code>&gt; LIST</code>
+passwordName1
+passwordName2
+passwordName3
+</pre>
+
+          <h2 class="text-2xl font-semibold mt-8 mb-4">
+            <span class="text-blue-500">GET &lt;password name&gt;</span>
+          </h2>
+          <p class="mb-2 text-gray-700">
+            Gets a password for a supplied password name. User will need to
+            supply the master vault password.
+          </p>
+          <pre class="bg-gray-800 text-white rounded-md p-4 overflow-x-auto"><code>&gt; GET passwordName1</code>
+Enter master vault password:
+password123
+</pre>
+
+          <h2 class="text-2xl font-semibold mt-8 mb-4">
+            <span class="text-blue-500">MOTD &lt;string&gt;</span>
+          </h2>
+          <p class="mb-2 text-gray-700">Echoes a test MOTD message.</p>
+          <pre class="bg-gray-800 text-white rounded-md p-4 overflow-x-auto"><code>&gt; MOTD Here is the current time: {now.time}</code>
+Preview of your new MOTD:
+Here is the current time: 19:54:09.307283
+</pre>
+
+          <h2 class="text-2xl font-semibold mt-8 mb-4">
+            <span class="text-blue-500">QUIT</span>
+          </h2>
+          <p class="mb-2 text-gray-700">Safely exits the ValuVault session.</p>
+          <pre class="bg-gray-800 text-white rounded-md p-4 overflow-x-auto"><code>&gt; QUIT</code>
+Goodbye!
+</pre>
+          <br>
+          <p>
+            More commands coming soon, but for such a cheap password vault
+            solution, you should be thankful you have these four!
+          </p>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="section4" class="mb-16">
+          <h2 class="text-3xl font-bold mb-5">Configuration</h2>
+          <p class="mb-4">
+            Below are the configuration options available for ValuVault. These
+            options should be specified in the configuration file (e.g.,
+            `valuvault-config.yaml`).
+          </p>
+
+          <h2 class="text-2xl font-semibold mb-4">General Settings</h2>
+          <pre class="bg-gray-800 text-white rounded-md p-4 overflow-x-auto">server:
+    port: 8080
+    logLevel: info
+    motd: "Welcome to ValuVault! Today's date is {now.date} and the time is {now.time}."
+
+database:
+    type: postgres
+    host: localhost
+    port: 5432
+    user: valuvault
+    password: securepassword
+    name: valuvaultdb
+
+security:
+    encryptionKey: your-encryption-key
+    jwtSecret: your-jwt-secret
+            </pre>
+
+          <h2 class="text-2xl font-semibold mt-8 mb-4">
+            Configuration Options
+          </h2>
+          <ul class="list-disc list-inside space-y-2">
+            <li>
+              <span class="font-bold">server.port</span>: The port number on
+              which the ValuVault server will run. Default is
+              <code class="bg-gray-200 rounded p-1">8080</code>.
+            </li>
+            <li>
+              <span class="font-bold">server.logLevel</span>: The level of
+              logging. Possible values are
+              <code class="bg-gray-200 rounded p-1">info</code>,
+              <code class="bg-gray-200 rounded p-1">warn</code>,
+              <code class="bg-gray-200 rounded p-1">error</code>. Default is
+              <code class="bg-gray-200 rounded p-1">info</code>.
+            </li>
+            <li>
+              <span class="font-bold">server.motd</span>: The Message of the Day
+              format string. Use
+              <code class="bg-gray-200 rounded p-1">{now.date}</code> and
+              <code class="bg-gray-200 rounded p-1">{now.time}</code> as
+              placeholders for the current date and time.
+            </li>
+            <li>
+              <span class="font-bold">database.type</span>: The type of
+              database. Default is
+              <code class="bg-gray-200 rounded p-1">postgres</code>.
+            </li>
+            <li>
+              <span class="font-bold">database.host</span>: The hostname of the
+              database server. Default is
+              <code class="bg-gray-200 rounded p-1">localhost</code>.
+            </li>
+            <li>
+              <span class="font-bold">database.port</span>: The port number of
+              the database server. Default is
+              <code class="bg-gray-200 rounded p-1">5432</code>.
+            </li>
+            <li>
+              <span class="font-bold">database.user</span>: The username for
+              accessing the database.
+            </li>
+            <li>
+              <span class="font-bold">database.password</span>: The password for
+              accessing the database.
+            </li>
+            <li>
+              <span class="font-bold">database.name</span>: The name of the
+              database.
+            </li>
+            <li>
+              <span class="font-bold">security.encryptionKey</span>: The key
+              used for encrypting data.
+            </li>
+            <li>
+              <span class="font-bold">security.jwtSecret</span>: The secret key
+              used for signing JWT tokens.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <p class="text-center text-gray-700">
+          © 2024 ValuVault. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("menu-btn")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("menu");
+          menu.classList.toggle("hidden");
+        });
+    </script>
+  
+
+</body></html>

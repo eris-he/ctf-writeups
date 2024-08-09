@@ -1,0 +1,591 @@
+{
+    "file": {
+        "depth": 0,
+        "flavors": {
+            "mime": [
+                "application/x-dosexec"
+            ],
+            "yara": [
+                "mz_file"
+            ]
+        },
+        "name": "AnyDesk.exe",
+        "scanners": [
+            "ScanEntropy",
+            "ScanFooter",
+            "ScanHash",
+            "ScanHeader",
+            "ScanPe",
+            "ScanTlsh",
+            "ScanYara"
+        ],
+        "size": 5328201,
+        "tree": {
+            "node": "24202103-29f4-42d5-9fbf-a97535c30f6c",
+            "root": "24202103-29f4-42d5-9fbf-a97535c30f6c"
+        }
+    },
+    "request": {
+        "attributes": {
+            "filename": "AnyDesk.exe",
+            "metadata": {
+                "source": "fileshot"
+            }
+        },
+        "client": "fileshot",
+        "id": "24202103-29f4-42d5-9fbf-a97535c30f6c",
+        "time": 1714100530
+    },
+    "scan": {
+        "entropy": {
+            "elapsed": 0.002504,
+            "entropy": 7.999484521844582
+        },
+        "footer": {
+            "backslash": "\\xe49\\xd7j\\xc4@\\x88\\xbb}\\xe3\\xa7\\xa6L\\x15\\x80\\x03\\xebD\\xbc\\xc3\\xf8`?g\\x8eT\\x18\\xf7\\xad\\xbd\\xb3,\\xeeF\\xcf\\x9c\\xf3\\xb6\\xfb\\xb4V\\x90\\xc5\\x83\\x00\\xce\\t\\x00\\x00\\x00",
+            "elapsed": 2.2e-05,
+            "footer": "\ufffd9\ufffdj\ufffd@\ufffd\ufffd}\u39e6L\u0015\ufffd\u0003\ufffdD\ufffd\ufffd\ufffd`?g\ufffdT\u0018\ufffd\ufffd\ufffd\ufffd,\ufffdF\u03dc\ufffd\ufffd\ufffdV\ufffd\u0143\u0000\ufffd\t\u0000\u0000\u0000"
+        },
+        "hash": {
+            "elapsed": 0.08409,
+            "md5": "0b400f2f886f1b84f6cc43fcd3ff8e66",
+            "sha1": "393a3712f82c1f29ec81c0d874ddd157534c07a4",
+            "sha256": "84e25ecec069b002ceb92036f43ff8509fb8bbe7976e72f50192c550b4a49328",
+            "ssdeep": "98304:e5WW6KEdJxfpDVOMdq2668yIv1//nvkYCRThGXBJdicotUgwoAo5beyjf:K3vEbxfjf4Y8yofvktkLdurH5iyD",
+            "tlsh": "T11536333493648B79CCA3013002D5E6792B7EBC8A4DD789987D63E968F7DF6023F96211"
+        },
+        "header": {
+            "backslash": "MZ\\x90\\x00\\x03\\x00\\x00\\x00\\x04\\x00\\x00\\x00\\xff\\xff\\x00\\x00\\xb8\\x00\\x00\\x00\\x00\\x00\\x00\\x00@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00",
+            "elapsed": 3.1e-05,
+            "header": "MZ\ufffd\u0000\u0003\u0000\u0000\u0000\u0004\u0000\u0000\u0000\ufffd\ufffd\u0000\u0000\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+        },
+        "pe": {
+            "address_of_entry_point": 7397,
+            "base_of_code": 4096,
+            "base_of_data": 16384,
+            "checksum": 5359632,
+            "compile_time": "2024-04-24T12:53:24",
+            "debug": {
+                "age": 1,
+                "guid": "274b9e6d-b047-e34b-adcb8ffaddc72cd5",
+                "pdb": "C:\\Buildbot\\ad-windows-32\\build\\release\\app-32\\win_loader\\AnyDesk.pdb",
+                "type": "rsds"
+            },
+            "dll_characteristics": [
+                "DYNAMIC_BASE",
+                "NX_COMPAT",
+                "TERMINAL_SERVER_AWARE"
+            ],
+            "elapsed": 0.423738,
+            "file_alignment": 512,
+            "file_info": {
+                "company_name": "AnyDesk Software GmbH",
+                "file_description": "AnyDesk",
+                "file_version": "8.0.10",
+                "fixed": {
+                    "type": {
+                        "primary": "APP"
+                    }
+                },
+                "legal_copyright": "(C) 2022 AnyDesk Software GmbH",
+                "product_name": "AnyDesk",
+                "product_version": "8.0",
+                "var": {
+                    "character_set": "Multilingual",
+                    "language": "U.S. English"
+                }
+            },
+            "flags": [
+                "overlay"
+            ],
+            "header": {
+                "machine": {
+                    "id": 332,
+                    "type": "I386"
+                },
+                "magic": {
+                    "dos": "DOS",
+                    "image": "32_BIT"
+                },
+                "subsystem": "WINDOWS_GUI"
+            },
+            "image_base": 4194304,
+            "image_characteristics": [
+                "EXECUTABLE_IMAGE",
+                "LARGE_ADDRESS_AWARE",
+                "32BIT_MACHINE"
+            ],
+            "image_version": 0,
+            "linker_version": 10,
+            "major_image_version": 0,
+            "major_linker_version": 10,
+            "major_operating_system_version": 5,
+            "major_subsystem_version": 5,
+            "minor_image_version": 0,
+            "minor_linker_version": 0,
+            "minor_operating_system_version": 1,
+            "minor_subsystem_version": 1,
+            "operating_system_version": 5.1,
+            "overlay": {
+                "extracted": false,
+                "size": 20809
+            },
+            "resources": [
+                {
+                    "id": 1,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "c88936dd1a7d59c4403d6babb04dd87e",
+                    "sha1": "cc33904defad90d05ccec92b7fff7d5902941795",
+                    "sha256": "ea057e896209478d8290a1b526cae84f2509678d866d08382614707f3b710d47",
+                    "type": "ICON"
+                },
+                {
+                    "id": 2,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "092bef43014ecb8adbaf06131ce5e40b",
+                    "sha1": "1b15bd67961afbecb0cbbd1183c2d0dc9ed9e7cf",
+                    "sha256": "f50850ec3e997252b5533691868d04c15e923efe4f694c0ea8126f612e60404c",
+                    "type": "ICON"
+                },
+                {
+                    "id": 3,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "3a69266d6258e81e65a29138c95fe2a8",
+                    "sha1": "606560abf36b292f238d7ad4aa6c09ec8a21f8a3",
+                    "sha256": "bc1cb94bcc63c8541ff535da88ed153ff3346db3fb93fc27fe87d414b2038dc4",
+                    "type": "ICON"
+                },
+                {
+                    "id": 4,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "75705b8eedfc400d14f7ae9c8f40935b",
+                    "sha1": "ebecc73c1403107ce631cc21a6c4262a4c0ee1aa",
+                    "sha256": "c433628ee32bb8698e81f2ebb23d615e4bcf34ba954055410c64c3638c95503c",
+                    "type": "ICON"
+                },
+                {
+                    "id": 5,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "76b057741da4577549a4b9ef8f585bb3",
+                    "sha1": "4d4f6f821507639f8214bae9aa2be1f480b7e844",
+                    "sha256": "b008246dad106e522b98810ce6bc1212c8f12e78a6f77506283782438ea5b65d",
+                    "type": "ICON"
+                },
+                {
+                    "id": 6,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "2610c05771e702a41ecb8da0b04d0ab5",
+                    "sha1": "31364061514f28d5a1d705779e53813dac0b3a33",
+                    "sha256": "b971ae520635a90d11feec73c6569c869fa253b30f2f5c48e5db9a53a3011a0c",
+                    "type": "ICON"
+                },
+                {
+                    "id": 7,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "24e8eca8ba394adf26140b977971f9a1",
+                    "sha1": "880457cd2862996cb8048208345fd97572d414c4",
+                    "sha256": "9756f73802f079675e55f855935060a2fa1a6760ff95a6da7d172637c31068a9",
+                    "type": "ICON"
+                },
+                {
+                    "id": 1000,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "53975c41e7520296015f9db3f16a6c74",
+                    "sha1": "03aad254664361f296e2c982968d4afb537a573e",
+                    "sha256": "4041084c14f8f142bf7919feedf1437c9bdb5c3040db4a2bd2b0cf387f006fcf",
+                    "type": "GROUP_ICON"
+                },
+                {
+                    "id": 1001,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "f450601c55ed21618c3f1a5ba1f27a4f",
+                    "sha1": "06f1824063568ba0dd86aacd8159af2cf3a47f54",
+                    "sha256": "bd48b5685ffe8ec4a32dc5da2aff7b279e3ad02a2671beb80d1b8f44cf7e416f",
+                    "type": "GROUP_ICON"
+                },
+                {
+                    "id": 1,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "504287bad449fb52c559f9e7b88d9af1",
+                    "sha1": "31a23d75df060aa72038593564fd039bbe7e14a7",
+                    "sha256": "4ab4995deb16a4e0d0a1ceaed05ad7e3518e5336a6ae25d2e115555e9ab8efad",
+                    "type": "VERSION"
+                },
+                {
+                    "id": 1,
+                    "language": {
+                        "primary": "ENGLISH",
+                        "sub": "ENGLISH_US"
+                    },
+                    "md5": "2751d5919e0a5bab1cf12ad22e863df4",
+                    "sha1": "9823e9c0d87ea31f36da3cb109d4d3a17f5e5d00",
+                    "sha256": "e543a34d49f083f6bfe678ead0de907ea5d4ef9aa1d2449ccc9a6d83f81bb9c2",
+                    "type": "MANIFEST"
+                }
+            ],
+            "rich": {
+                "clear_data": {
+                    "data": "RGFuUwAAAAAAAAAAAAAAAG92qwAIAAAAb3aqAAMAAAAbnZoAAQAAAG92nQABAAAA",
+                    "md5": "0346796297b0275b7b7f2424152e17a0"
+                },
+                "info": [
+                    {
+                        "count": 8,
+                        "toolid": 171,
+                        "version": 30319
+                    },
+                    {
+                        "count": 3,
+                        "toolid": 170,
+                        "version": 30319
+                    },
+                    {
+                        "count": 1,
+                        "toolid": 154,
+                        "version": 40219
+                    },
+                    {
+                        "count": 1,
+                        "toolid": 157,
+                        "version": 30319
+                    }
+                ],
+                "key": "ad7d893b",
+                "raw_data": {
+                    "data": "6RznaK19iTutfYk7rX2JO8ILIjulfYk7wgsjO659iTu24BM7rH2JO8ILFDusfYk7",
+                    "md5": "0e8f987fdfa3981fcc193f9d77942d41"
+                }
+            },
+            "section_alignment": 4096,
+            "sections": [
+                {
+                    "address": {
+                        "physical": 10359,
+                        "virtual": 4096
+                    },
+                    "characteristics": [
+                        "CNT_CODE",
+                        "MEM_EXECUTE",
+                        "MEM_READ"
+                    ],
+                    "entropy": 6.559086341196753,
+                    "md5": "6de7d38e79590f5072b2fa25c8a461db",
+                    "name": ".text",
+                    "sha1": "cab823f43c2b1749d1a0cd464c8b975aa9038cf7",
+                    "sha256": "86e6d99852e156682d520cf8fb8fe8aacb6855947d184b70cee13605ebb8e1b7",
+                    "size": 10752
+                },
+                {
+                    "address": {
+                        "physical": 19093504,
+                        "virtual": 16384
+                    },
+                    "characteristics": [
+                        "CNT_UNINITIALIZED_DATA",
+                        "MEM_READ",
+                        "MEM_WRITE"
+                    ],
+                    "entropy": 0,
+                    "md5": "d41d8cd98f00b204e9800998ecf8427e",
+                    "name": ".itext",
+                    "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "size": 0
+                },
+                {
+                    "address": {
+                        "physical": 762,
+                        "virtual": 19111936
+                    },
+                    "characteristics": [
+                        "CNT_INITIALIZED_DATA",
+                        "MEM_READ"
+                    ],
+                    "entropy": 5.663602401873528,
+                    "md5": "bf5eee8accfc7d0f37b5d97724325e98",
+                    "name": ".rdata",
+                    "sha1": "4b3819a9a7a65db2006101edb9e67d140e610111",
+                    "sha256": "46f63c1ea9893fca3806467a1ee1fb19c42838f7571fb2d7257a2661cfb0a3a1",
+                    "size": 1024
+                },
+                {
+                    "address": {
+                        "physical": 5275372,
+                        "virtual": 19116032
+                    },
+                    "characteristics": [
+                        "CNT_INITIALIZED_DATA",
+                        "MEM_READ",
+                        "MEM_WRITE"
+                    ],
+                    "entropy": 7.999968381164803,
+                    "md5": "da9e83e5e1d5baf1ccdace3aa4312eee",
+                    "name": ".data",
+                    "sha1": "8263992d73d6a15e2d8149b762d8ecb98848587b",
+                    "sha256": "4ed9187ef63583f8e41d1b33b4373db52bc9a714af0d15f117166becbf0bd5d9",
+                    "size": 5274624
+                },
+                {
+                    "address": {
+                        "physical": 18512,
+                        "virtual": 24391680
+                    },
+                    "characteristics": [
+                        "CNT_INITIALIZED_DATA",
+                        "MEM_READ"
+                    ],
+                    "entropy": 6.017396108357361,
+                    "md5": "e02f811023480bcb805c46d630c69e50",
+                    "name": ".rsrc",
+                    "sha1": "56e631348cd410cc9356ab995cfe0abd202038f0",
+                    "sha256": "53918e55c6f959da0725140094ede52b3ceaa3344a5e42c4c40f19818f8c7bbf",
+                    "size": 18944
+                },
+                {
+                    "address": {
+                        "physical": 768,
+                        "virtual": 24412160
+                    },
+                    "characteristics": [
+                        "CNT_INITIALIZED_DATA",
+                        "MEM_DISCARDABLE",
+                        "MEM_READ"
+                    ],
+                    "entropy": 1.2203722656529061,
+                    "md5": "dff545c0291c6bb280bbfb0224bbecb4",
+                    "name": ".reloc",
+                    "sha1": "bd2c00da7a469cb7cd7b105443249a4c9a2adae8",
+                    "sha256": "e1343c68c7231a9135d394e87dae657c7575212f11196e6d6d05124021ff8825",
+                    "size": 1024
+                }
+            ],
+            "security": {
+                "certificates": [
+                    {
+                        "common_name": "DigiCert Assured ID Root CA",
+                        "country_name": "US",
+                        "issuer_dn": "CN=DigiCert Assured ID Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US",
+                        "organization_name": "DigiCert Inc",
+                        "organizational_unit_name": "www.digicert.com",
+                        "serial_number": "19414496059604725969669510860671817818",
+                        "signature_algorithim": "1.2.840.113549.1.1.12",
+                        "subject_dn": "CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US",
+                        "valid_from": "2022-08-01T00:00:00+00:00",
+                        "valid_to": "2031-11-09T23:59:59+00:00"
+                    },
+                    {
+                        "common_name": "DigiCert Trusted Root G4",
+                        "country_name": "US",
+                        "issuer_dn": "CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US",
+                        "organization_name": "DigiCert Inc",
+                        "organizational_unit_name": "www.digicert.com",
+                        "serial_number": "9586110043380832440035821245782711899",
+                        "signature_algorithim": "1.2.840.113549.1.1.11",
+                        "subject_dn": "CN=DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA, O=DigiCert\\, Inc., C=US",
+                        "valid_from": "2022-03-23T00:00:00+00:00",
+                        "valid_to": "2037-03-22T23:59:59+00:00"
+                    },
+                    {
+                        "common_name": "DigiCert Trusted Root G4",
+                        "country_name": "US",
+                        "issuer_dn": "CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US",
+                        "organization_name": "DigiCert Inc",
+                        "organizational_unit_name": "www.digicert.com",
+                        "serial_number": "11533403529598586876501374841704918745",
+                        "signature_algorithim": "1.2.840.113549.1.1.12",
+                        "subject_dn": "CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1, O=DigiCert\\, Inc., C=US",
+                        "valid_from": "2021-04-29T00:00:00+00:00",
+                        "valid_to": "2036-04-28T23:59:59+00:00"
+                    },
+                    {
+                        "common_name": "DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA",
+                        "country_name": "US",
+                        "issuer_dn": "CN=DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA, O=DigiCert\\, Inc., C=US",
+                        "organization_name": "DigiCert, Inc.",
+                        "serial_number": "7002784885422699301467740558332354838",
+                        "signature_algorithim": "1.2.840.113549.1.1.11",
+                        "subject_dn": "CN=DigiCert Timestamp 2023, O=DigiCert\\, Inc., C=US",
+                        "valid_from": "2023-07-14T00:00:00+00:00",
+                        "valid_to": "2034-10-13T23:59:59+00:00"
+                    },
+                    {
+                        "common_name": "DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1",
+                        "country_name": "US",
+                        "issuer_dn": "CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1, O=DigiCert\\, Inc., C=US",
+                        "organization_name": "DigiCert, Inc.",
+                        "serial_number": "4061411382747012353488974027589487996",
+                        "signature_algorithim": "1.2.840.113549.1.1.11",
+                        "subject_dn": "CN=AnyDesk Software GmbH, O=AnyDesk Software GmbH, L=Stuttgart, ST=Baden-W\u00fcrttemberg, C=DE",
+                        "valid_from": "2024-02-12T00:00:00+00:00",
+                        "valid_to": "2025-02-12T23:59:59+00:00"
+                    },
+                    {
+                        "common_name": "DigiCert Trusted Root G4",
+                        "country_name": "US",
+                        "issuer_dn": "CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US",
+                        "organization_name": "DigiCert Inc",
+                        "organizational_unit_name": "www.digicert.com",
+                        "serial_number": "11533403529598586876501374841704918745",
+                        "signature_algorithim": "1.2.840.113549.1.1.12",
+                        "subject_dn": "CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1, O=DigiCert\\, Inc., C=US",
+                        "valid_from": "2021-04-29T00:00:00+00:00",
+                        "valid_to": "2036-04-28T23:59:59+00:00"
+                    },
+                    {
+                        "common_name": "DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1",
+                        "country_name": "US",
+                        "issuer_dn": "CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1, O=DigiCert\\, Inc., C=US",
+                        "organization_name": "DigiCert, Inc.",
+                        "serial_number": "4061411382747012353488974027589487996",
+                        "signature_algorithim": "1.2.840.113549.1.1.11",
+                        "subject_dn": "CN=AnyDesk Software GmbH, O=AnyDesk Software GmbH, L=Stuttgart, ST=Baden-W\u00fcrttemberg, C=DE",
+                        "valid_from": "2024-02-12T00:00:00+00:00",
+                        "valid_to": "2025-02-12T23:59:59+00:00"
+                    }
+                ],
+                "counter_signers": [
+                    {
+                        "issuer_dn": "CN=DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA, O=DigiCert\\, Inc., C=US",
+                        "serial_number": "7002784885422699301467740558332354838",
+                        "signing_time": "2024-04-25T12:16:00+00:00"
+                    },
+                    {
+                        "issuer_dn": "CN=DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA, O=DigiCert\\, Inc., C=US",
+                        "serial_number": "7002784885422699301467740558332354838",
+                        "signing_time": "2024-04-25T12:16:02+00:00"
+                    }
+                ],
+                "signers": [
+                    {
+                        "issuer_dn": "CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1, O=DigiCert\\, Inc., C=US",
+                        "serial_number": "4061411382747012353488974027589487996"
+                    },
+                    {
+                        "issuer_dn": "CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1, O=DigiCert\\, Inc., C=US",
+                        "serial_number": "4061411382747012353488974027589487996"
+                    }
+                ],
+                "verification": false,
+                "verification_error": "The expected hash does not match the digest in SpcInfo"
+            },
+            "size_of_code": 10752,
+            "size_of_headers": 1024,
+            "size_of_heap_commit": 4096,
+            "size_of_heap_reserve": 1048576,
+            "size_of_image": 24416256,
+            "size_of_initialized_data": 5296640,
+            "size_of_stack_commit": 4096,
+            "size_of_stack_reserve": 1048576,
+            "size_of_uninitialized_data": 19093504,
+            "subsystem_version": 5.1,
+            "summary": {
+                "resource_md5": [
+                    "c88936dd1a7d59c4403d6babb04dd87e",
+                    "092bef43014ecb8adbaf06131ce5e40b",
+                    "75705b8eedfc400d14f7ae9c8f40935b",
+                    "504287bad449fb52c559f9e7b88d9af1",
+                    "2610c05771e702a41ecb8da0b04d0ab5",
+                    "24e8eca8ba394adf26140b977971f9a1",
+                    "53975c41e7520296015f9db3f16a6c74",
+                    "76b057741da4577549a4b9ef8f585bb3",
+                    "f450601c55ed21618c3f1a5ba1f27a4f",
+                    "2751d5919e0a5bab1cf12ad22e863df4",
+                    "3a69266d6258e81e65a29138c95fe2a8"
+                ],
+                "resource_sha1": [
+                    "606560abf36b292f238d7ad4aa6c09ec8a21f8a3",
+                    "880457cd2862996cb8048208345fd97572d414c4",
+                    "9823e9c0d87ea31f36da3cb109d4d3a17f5e5d00",
+                    "03aad254664361f296e2c982968d4afb537a573e",
+                    "31a23d75df060aa72038593564fd039bbe7e14a7",
+                    "cc33904defad90d05ccec92b7fff7d5902941795",
+                    "06f1824063568ba0dd86aacd8159af2cf3a47f54",
+                    "ebecc73c1403107ce631cc21a6c4262a4c0ee1aa",
+                    "31364061514f28d5a1d705779e53813dac0b3a33",
+                    "4d4f6f821507639f8214bae9aa2be1f480b7e844",
+                    "1b15bd67961afbecb0cbbd1183c2d0dc9ed9e7cf"
+                ],
+                "resource_sha256": [
+                    "c433628ee32bb8698e81f2ebb23d615e4bcf34ba954055410c64c3638c95503c",
+                    "bc1cb94bcc63c8541ff535da88ed153ff3346db3fb93fc27fe87d414b2038dc4",
+                    "b971ae520635a90d11feec73c6569c869fa253b30f2f5c48e5db9a53a3011a0c",
+                    "ea057e896209478d8290a1b526cae84f2509678d866d08382614707f3b710d47",
+                    "bd48b5685ffe8ec4a32dc5da2aff7b279e3ad02a2671beb80d1b8f44cf7e416f",
+                    "4041084c14f8f142bf7919feedf1437c9bdb5c3040db4a2bd2b0cf387f006fcf",
+                    "4ab4995deb16a4e0d0a1ceaed05ad7e3518e5336a6ae25d2e115555e9ab8efad",
+                    "9756f73802f079675e55f855935060a2fa1a6760ff95a6da7d172637c31068a9",
+                    "f50850ec3e997252b5533691868d04c15e923efe4f694c0ea8126f612e60404c",
+                    "b008246dad106e522b98810ce6bc1212c8f12e78a6f77506283782438ea5b65d",
+                    "e543a34d49f083f6bfe678ead0de907ea5d4ef9aa1d2449ccc9a6d83f81bb9c2"
+                ],
+                "section_md5": [
+                    "e02f811023480bcb805c46d630c69e50",
+                    "da9e83e5e1d5baf1ccdace3aa4312eee",
+                    "bf5eee8accfc7d0f37b5d97724325e98",
+                    "d41d8cd98f00b204e9800998ecf8427e",
+                    "dff545c0291c6bb280bbfb0224bbecb4",
+                    "6de7d38e79590f5072b2fa25c8a461db"
+                ],
+                "section_sha1": [
+                    "8263992d73d6a15e2d8149b762d8ecb98848587b",
+                    "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                    "4b3819a9a7a65db2006101edb9e67d140e610111",
+                    "56e631348cd410cc9356ab995cfe0abd202038f0",
+                    "cab823f43c2b1749d1a0cd464c8b975aa9038cf7",
+                    "bd2c00da7a469cb7cd7b105443249a4c9a2adae8"
+                ],
+                "section_sha256": [
+                    "46f63c1ea9893fca3806467a1ee1fb19c42838f7571fb2d7257a2661cfb0a3a1",
+                    "e1343c68c7231a9135d394e87dae657c7575212f11196e6d6d05124021ff8825",
+                    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "86e6d99852e156682d520cf8fb8fe8aacb6855947d184b70cee13605ebb8e1b7",
+                    "53918e55c6f959da0725140094ede52b3ceaa3344a5e42c4c40f19818f8c7bbf",
+                    "4ed9187ef63583f8e41d1b33b4373db52bc9a714af0d15f117166becbf0bd5d9"
+                ]
+            },
+            "total": {
+                "libraries": 0,
+                "resources": 11,
+                "sections": 6,
+                "symbols": 0
+            }
+        },
+        "tlsh": {
+            "elapsed": 0.039521
+        },
+        "yara": {
+            "elapsed": 0.007353,
+            "rules_loaded": 0
+        }
+    }
+}
