@@ -4,4 +4,4 @@ This folder contains writeups of al the problems that were presented during Tier
 
 There are two categories of challenges: offensive (O) and defensive (D). Each problem is named accordingly. For example, O1 means Offensive 1, or the first offensive challenge.
 
-Most of these challenges should be workable with the images and information I've reproduced here, barring the ones that require active interaction with a web server.
+These challenges should be workable with the images and information I've reproduced here, barring the ones that require active interaction with a web server. (Unfortunately, that happens to be...every offensive challenge.)
